@@ -21,11 +21,11 @@ constructor (private faceSnapsService : FaceSnapsService ){
 
   onSnap() {
     if (this.buttonText === 'Oh Snap!') {
-      this.faceSnapsService.snapFaceSnapById(this.faceSnap.id);
+      this.faceSnapsService.snapFaceSnapById(this.faceSnap.id, 'snap');
       this.buttonText = 'Oups, unSnap!'
     }else{
       this.buttonText = 'Oh Snap!';
-      this.faceSnapsService.unsnapFaceSnapById(this.faceSnap.id);
+      this.faceSnapsService.snapFaceSnapById(this.faceSnap.id, 'unsnap');
     }
   }
 }
