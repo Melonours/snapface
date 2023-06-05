@@ -5,4 +5,5 @@ export class FaceSnap {
     snaps!: number;
     imageUrl!: string;
     location?: string;
+    id!: number;
 }
